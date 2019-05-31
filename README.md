@@ -45,3 +45,11 @@ You now need to set up the camera on a tripod in your desired location pointing 
 The camera battery died?
 	If you are quick enough, you can have a spare fully charged battery and do a quick swap of batteries or
 	you could run the camera from an AC adaptor.
+My SD card filled up?
+	Your camera would stop taking images and do what it normally does when you fill up the SD card and stop
+	taking images. To help prevent this, you could save the images as a JPEG file and not a RAW file what can 
+	massively cut down on space usage, you will need to check your cameras manufacturer's manual if you 
+	are not sure how to (you will need to as the script to make the images into a video file only works with 
+	JPEG images)
+
+
