@@ -1,6 +1,8 @@
 
 # PYDSLRtl
 
+[YouTube tutorial comming soon]
+
 A DSLR time-lapse application written in python to make time lapses using a DSLR (script provided to stitch frames together into an AVI file).
 
 This works on any Linux based device whether its a raspberry pi or a full blown laptop or desktop running Linux. 
