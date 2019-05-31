@@ -26,7 +26,7 @@ Here is the output when a camera is not detected:
                                           
 Here is an example of the output when a camera is detected properly:
 
-    lewis@lewis-HP-Notebook:~/Desktop/PYDSLRtl$ ./timelapse.py --detect
+    lewis@lewis-HP-Notebook:~/Desktop/DSLR-timelapse$ ./timelapse.py --detect
     Model                          Port                                            
     ----------------------------------------------------------
     Nikon DSC D80 (PTP mode)       usb:003,012   
@@ -39,6 +39,12 @@ If you have everything hooked up properly, you should hear/see your camera take 
 # Now its time to get it set up!
 
 You now need to set up the camera on a tripod in your desired location pointing at your desired subject, remember to be creative! Some setup is dependent on the make/model of the camera but is mostly the same. So you can go the easy focus setup and go full auto-focus, the medium method, use auto-focus to focus at the start before shooting and switching to manual focus before starting the script or the hardest method, going full manual focus. Each focus setup does depend on your usage case but that is what experimentation is for. For camera settings, you can use whatever settings you wish and the script will not care. You could go full manual and tune each setting to your hearts desire, aperture priority so your camera will adjust the shutter speed with the light levels or shutter priority were the camera adjusts the aperture to the light levels but you can use whatever mode you wish, again a perfect opportunity to experiment with settings. Now after you have gotten your camera setup how you wish, you can now setup the Linux device with your camera, oh wait, you don't need to! All you need to do is to connect your camera over USB and provide now many images you want to take. 
+
+# Stitching the images together
+I have provided a bash script to process all of the JPEG images and turn them into a single uncompressed AVI file. To use this script, make a folder anywhere on your Linux device and copy all images you took for your time lapse into that new folder along with the 'stitch-images.sh' file (make sure stitch-images.sh is in the same folder as all of the JPEG images) and run it by typing
+
+    ./stitch-images.sh
+and the script will automatically rename all files so they are in the proper order for processing, then it will resize all the images to 1920*1080 and then use FFMPEG to take all of the renamed and resized images and convert them all into a single 25fps uncompressed AVI file. If you find that the uncompressed file is too much for your device, you can use a program like handbrake to compress the AVI into a smaller, compressed, MPEG4 encoded file. If you have any issues with the script, make an issue [here](https://github.com/sniff122/PYDSLRtl/issues/new).
 
 # What would happen if?
 
