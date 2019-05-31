@@ -26,7 +26,7 @@ Here is the output when a camera is not detected:
                                           
 Here is an example of the output when a camera is detected properly:
 
-    lewis@lewis-HP-Notebook:~/Desktop/DSLR-timelapse$ ./timelapse.py --detect
+    lewis@lewis-HP-Notebook:~/Desktop/PYDSLRtl$ ./timelapse.py --detect
     Model                          Port                                            
     ----------------------------------------------------------
     Nikon DSC D80 (PTP mode)       usb:003,012   
