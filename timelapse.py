@@ -8,7 +8,7 @@ import subprocess
 import os
 import datetime
 
-parser = argparse.ArgumentParser(prog='Timelapse', description='Perform timelapses using GPhoto2 and a supported DSLR camera')
+parser = argparse.ArgumentParser(prog='PYDSLRtl', description='Perform timelapses using GPhoto2 and a supported DSLR camera')
 
 parser.add_argument('--no-photos', '-n', help='Number of Photos to be taken', dest='num_photos', type=int)
 parser.add_argument('--delay', '-d', help='Delay between photos - Default delay is 1', dest='photo_delay', type=float, default=1)
